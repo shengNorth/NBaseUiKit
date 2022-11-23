@@ -1,3 +1,4 @@
+﻿#pragma execution_character_set("utf-8")
 #include "nbasewaitdialog.h"
 #include <QKeyEvent>
 #include <QEventLoop>
@@ -137,7 +138,7 @@ void NBaseWaitDialog::setAndroidStyle()
     QWidget *left = new QWidget(this);
     left->setGeometry(0,18,90,this->height()-36);
     // 增加右边文字面板
-    QLabel *right = new QLabel(QString("请耐心等候……"),this);
+    QLabel *right = new QLabel("请耐心等候...",this);
     right->setFont(QFont("微软雅黑", 14, QFont::Bold));
     right->setAlignment(Qt::AlignCenter);
     right->setGeometry(90,18,200,this->height()-36);

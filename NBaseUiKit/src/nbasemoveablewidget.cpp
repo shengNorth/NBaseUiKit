@@ -1,5 +1,7 @@
 #include "nbasemoveablewidget.h"
 
+#define PADDING 2
+
 NBaseMoveableWidget::NBaseMoveableWidget(QWidget *parent) : NBaseToolButton(parent)
 {
     isLeftPressDown_ = false;

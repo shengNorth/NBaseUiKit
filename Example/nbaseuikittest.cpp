@@ -1,3 +1,4 @@
+﻿#pragma execution_character_set("utf-8")
 #include "nbaseuikittest.h"
 #include "ui_nbaseuikittest.h"
 #include <QLabel>

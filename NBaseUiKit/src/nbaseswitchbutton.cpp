@@ -1,4 +1,4 @@
-#include "nbaseswitchbutton.h"
+﻿#include "nbaseswitchbutton.h"
 #include <QMouseEvent>
 
 NBaseSwitchButton::NBaseSwitchButton(QWidget *parent) : QWidget(parent)
@@ -162,7 +162,7 @@ void NBaseSwitchButton::drawPressBackground(QPainter *painter)
     painter->setFont(tempFont);
     painter->drawText((mState?width()/5*2:width()/5*3) - fontMetrics().width("开")/2,
                       height()/2 + fontMetrics().height()/2,
-                      mState?"开":"关");
+                      mState?"On":"Off");
 }
 
 void NBaseSwitchButton::drawPressSlide(QPainter *painter)

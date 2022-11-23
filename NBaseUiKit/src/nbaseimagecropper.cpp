@@ -1,4 +1,4 @@
-#include "nbaseimagecropper.h"
+﻿#include "nbaseimagecropper.h"
 #include "imagecropper.h"
 #include <QPixmap>
 #include <QDebug>
@@ -47,7 +47,7 @@ NBaseImageCropper::NBaseImageCropper(QWidget *parent, bool isCropBtn, bool isToo
                                   "QPushButton[cropBtn=\"true\"]:hover{border-image:url(:upload_h)}"
                                   "QPushButton[cropBtn=\"true\"]:pressed{border-image:url(:upload_p)}"));
         cropBtn->setFixedSize(80,80);
-        cropBtn->setToolTip(tr("裁剪并上传图像"));
+        cropBtn->setToolTip("裁剪并上传图像");
         tempLayout->addWidget(cropBtn,6,3);
         connect(cropBtn,SIGNAL(clicked(bool)), this,SLOT(cropImage()));
     }
