@@ -71,6 +71,7 @@ void NBaseUiKitTest::on_pushButton_2_clicked()
     test_case_002->setStyleSheet("background-color: rgba(255, 0, 0, 120);");
     test_case_002->beginFadeShow(5);
 
+
     // 5秒后关闭
     QTimer::singleShot(5000, test_case_002, SLOT(deleteLater()));
 
